@@ -1,0 +1,54 @@
+  .bodysub{
+  width:1000px;
+  position:relative;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#tiles {
+  background-color: black;
+  list-style-type: none;
+  position:absolute;
+  top:1000px;
+  
+ 
+   /** Needed to ensure items are laid out relative to this container **/
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Grid items
+ */
+#tiles li {
+  width: 200px;
+  background-color: #ffffff;
+  border: 1px solid #dedede;
+          border-radius: 2px;
+     -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  display: none; /** Hide items initially to avoid a flicker effect **/
+  cursor: pointer;
+  padding: 4px;
+}
+
+#tiles li.inactive {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#tiles li img {
+  display: block;
+}
+
+/**
+ * Grid item text
+ */
+#tiles li p {
+  color: #666;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  font-weight: 200;
+  margin: 7px 0 2px 7px;
+}

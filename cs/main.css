@@ -1,0 +1,434 @@
+
+/** General page styling **/
+
+
+body {
+  background-image:url(back.png);
+  background-repeat:repeat;
+}
+
+  .bodysub{
+  width:1000px;
+  position:relative;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+      
+    
+
+.topheader  {
+  width:100%;
+  box-shadow:5px 2px 3px #111;
+  position:fixed;
+  z-index:50;
+  background-color:white;
+  left:0px;
+  height:50px;
+  top:0px;
+  
+  
+  
+}
+ontainer
+ */
+#tiles {
+  list-style-type: none;
+  position:absolute;
+  top:1000px;
+  width: 100%;
+  
+ 
+   /** Needed to ensure items are laid out relative to this container **/
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Grid items
+ */
+#tiles li {
+  width: 300px;
+  list-style: none;
+  background-color: #ffffff;
+  border: 1px solid #dedede;
+          border-radius: 2px;
+     -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  display: none; /** Hide items initially to avoid a flicker effect **/
+  cursor: pointer;
+  padding: 4px;
+   float: left;
+   margin: 3px;
+}
+
+#tiles li.inactive {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#tiles li img {
+  display: block;
+}
+
+/**
+ * Grid item text
+ */
+#tiles li p {
+  color: #666;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: left;
+  font-weight: 200;
+  margin: 7px 0 2px 7px;
+
+}
+
+
+
+
+
+
+f
+.progress-bar {
+  background-color: #0BC20B;
+  height: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  box-shadow: 0 1px 3px rgba(11, 194, 11, 0.2);
+  -webkit-transition: width 0.3s ease-out;
+     -moz-transition: width 0.3s ease-out;
+       -o-transition: width 0.3s ease-out;
+          transition: width 0.3s ease-out;
+}
+
+/**
+ * Placerholder css
+ */
+
+
+.example-tiles {
+  position: relative; /** Needed to ensure items are laid out relative to this container **/
+  margin: 0;
+  padding: 0;
+}
+
+.example-tiles li {
+  display: block;
+  opacity: 1;
+  list-style-type: none;
+  float: left;
+  margin: 5px;
+  -webkit-transition: all 0.3s ease-out;
+     -moz-transition: all 0.3s ease-out;
+       -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+}
+
+.example-tiles a,
+.example-tiles a:hover {
+  color: #555;
+  background-color: #eee;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  font-size: 2em;
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  padding: 5px 8px;
+  border-radius: 3px;
+}
+
+.example-tiles a:hover {
+  background-color: #ddd;
+}
+
+
+
+
+
+
+
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: ""; }
+
+blockquote, q {
+  quotes: "" ""; }
+
+/* HTML5 tags */
+header, section, footer,
+aside, nav, article, figure {
+  display: block; }
+
+/* hand cursor on clickable input elements */
+label, input[type=button], input[type=submit], button {
+  cursor: pointer; }
+
+/* make buttons play nice in IE:   
+    www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
+button {
+  width: auto;
+  overflow: visible; }
+
+/* Sharper Thumbnails */
+img {
+  -ms-interpolation-mode: bicubic; }
+
+input,
+textarea,
+select {
+  padding: 5px;
+  font: 400 1em Verdana, Sans-serif;
+  color: #666;
+  background: #fff;
+  border: 1px solid #999;
+  margin: 0 0 1em 0; }
+
+input:focus,
+textarea:focus,
+select:focus {
+  color: #000;
+  background: #fff;
+  border: 1px solid #666; }
+
+body {
+  font: 14px/1.6em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
+  background: #eee; 
+  padding: 100px 20%;
+}
+
+a, a:visited {
+  color: #0088cc;
+  text-decoration: none;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear; }
+
+a:hover, a:active {
+  color: #333333;
+  text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2em;
+  margin-bottom: 0.6em; }
+
+h1 {
+  font-size: 2.2em; }
+
+h2 {
+  font-size: 1.9em; }
+
+h3 {
+  font-size: 1.7em;
+  margin-top: 2em; }
+
+h4 {
+  font-size: 1.5em; }
+
+h5 {
+  font-size: 1.3em; }
+
+h6 {
+  font-size: 1.2em; }
+
+p {
+  margin-bottom: 1em; }
+
+ol, ul {
+  padding-left: 30px;
+  margin-bottom: 1em; }
+
+b, strong {
+  font-weight: bold; }
+
+i, em {
+  font-style: italic; }
+
+u {
+  text-decoration: underline; }
+
+abbr, acronym {
+  cursor: help;
+  border-bottom: .1em dotted; }
+
+td, td img {
+  vertical-align: top; }
+
+sub {
+  vertical-align: sub;
+  font-size: smaller; }
+
+sup {
+  vertical-align: super;
+  font-size: smaller; }
+
+code {
+  font-family: Courier, "Courier New", Monaco, Tahoma;
+  background: #eee;
+  color: #333;
+  padding: 0px 2px; }
+
+pre {
+  background: #eee;
+  padding: 20px;
+  margin-bottom: 1em;
+  overflow: auto; }
+
+blockquote {
+  font-style: italic;
+  margin: 0 0 1em 15px;
+  padding-left: 10px;
+  border-left: 5px solid #ddd; }
+  
+  
+  
+  
+  
+  
+  .lean-slider { 
+    position: relative; 
+    *zoom: 1;
+}
+.lean-slider:before,
+.lean-slider:after {
+    content: " ";
+    display: table;
+}
+.lean-slider:after {
+    clear: both;
+}
+
+.lean-slider-slide { 
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    display: none; 
+}
+.lean-slider-slide.current { display: block; }
+
+
+
+
+
+/*
+ * Lean Slider Sample Styles
+ * http://dev7studios.com/lean-slider
+ */
+ 
+.slider-wrapper { 
+    position: relative; 
+    background: #fff url(images/loading.gif) no-repeat 50% 50%;
+    -moz-box-shadow: 0 0 3px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.4);
+    box-shadow: 0 0 3px rgba(0,0,0,0.4);
+}
+.lean-slider { overflow: hidden; }
+.lean-slider-slide {
+    display: block;
+    position: relative;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s linear;
+    -moz-transition: opacity 0.6s linear;
+    -ms-transition: opacity 0.6s linear;
+    -o-transition: opacity 0.6s linear;
+    transition: opacity 0.6s linear;
+}
+.lean-slider-slide.current { opacity: 1; }
+.lean-slider-slide img { 
+    display: block;
+    width: 100%; 
+}
+
+#slider-direction-nav {
+    position: absolute;
+    left: 0;
+    top: 47%;
+    width: 100%;
+    -webkit-transition: opacity 0.2s linear;
+    -moz-transition: opacity 0.2s linear;
+    -ms-transition: opacity 0.2s linear;
+    -o-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+    opacity: 0.2;
+}
+.slider-wrapper:hover #slider-direction-nav { opacity: 1; }
+#slider-direction-nav a {
+    float: left;
+    display: block;
+    width: 26px;
+    height: 37px;
+    background: url(images/arrows.png) no-repeat 0 0;
+    text-indent: -9999px;
+}
+#slider-direction-nav .lean-slider-next {
+    float: right;
+    background-position: 100% 0;
+}
+
+#slider-control-nav {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: opacity 0.2s linear;
+    -moz-transition: opacity 0.2s linear;
+    -ms-transition: opacity 0.2s linear;
+    -o-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+    opacity: 0.2;
+}
+.slider-wrapper:hover #slider-control-nav { opacity: 1; }
+#slider-control-nav a {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(images/bullets.png) no-repeat 0 0;
+    text-indent: -9999px;
+    margin: 0 3px;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+#slider-control-nav a.active { background-position: 100% 0; }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-width : 480px) {
+
+    #slider-direction-nav,
+  #slider-control-nav { opacity: 1; }
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+  
+  #slider-direction-nav,
+  #slider-control-nav { opacity: 1; }
+
+}

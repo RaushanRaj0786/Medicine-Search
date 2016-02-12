@@ -1,0 +1,14 @@
+<table border="1">
+	<tr><td>Name : </td><td><?php echo $name; ?></td></tr>
+	<tr><td>Shop Number :</td><td><?php echo $shop_num; ?></td></tr>
+	<tr><td>Address 1 : </td><td><?php echo $add_1; ?></td></tr>
+	<tr><td>Address 2 :</td><td><?php echo $add_2; ?></td></tr>
+	<tr><td>City : </td><td></td><?php echo $city; ?></tr>
+	<tr><td>State : </td><td><?php echo $state; ?></td></tr>
+	<tr><td>Pin : </td><td><?php echo $pin; ?></td></tr>
+	<tr><td>Average Rating : </td><td><?php echo $avg; ?></td></tr>
+	<tr><td>Number of Ratings : </td><td><?php echo $num_raters; ?></td></tr>
+	<tr><td>Opening Time : </td><td><?php echo $open; ?></td></tr>
+	<tr><td>Closing Time : </td><td><?php echo $close; ?></td></tr>
+	<tr><td>Off day : </td><td><?php echo $off; ?></td></tr>
+</table>
